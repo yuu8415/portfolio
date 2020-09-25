@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GO ADVENTURE 架空の旅行会社サイト</title>
+<link rel="stylesheet" href="css/sample.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('#slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+</script>
+</head>
+
+<body>
+    <header id="page-top">
+        <div id="header_box">
+            <h1><img src="sampleimage/logo.gif" alt="GO ADVENTURE"></h1>
+
+            <nav>
+                <ul class="navigation">
+                    <li id="nav_home"><a href="#">home</a></li>
+                    <li id="nav_tour"><a href="#">tour</a></li>
+                    <li id="nav_about"><a href="#">about</a></li>
+                    <li id="nav_contact"><a href="#">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div id="contents">
+        <div id="main_area">
+            <div id="top">
+            <div id="main">
+                <div id="slider">
+                    <img src="sampleimage/hoian.jpg" alt="HOI AN" id="mypic">
+                    <img src="sampleimage/cappadocia.jpg" alt="CAPPADOCIA">
+                    <img src="sampleimage/russia.jpg" alt="RUSSIA">
+                </div>
+
+               
+            </div>
+        
+            <div id="search_area">
+                <form action="#" id="search">
+                    <h2>ツアーを探す</h2>
+                    <div id="search_section">
+                        <p>
+                            <label>出発地<br>
+                            <select name="departure" class="place_section dep_flight">
+                                <option value="">選択してください</option>
+                                <option value="tyo">東京</option>
+                                <option value="osa">大阪</option>
+                                <option value="sap">札幌</option>
+                                <option value="hkt">福岡</option>
+                            </select></label>
+                        </p>
+                        <p>
+                            <label>目的地<br>
+                            <select name="destination" class="place_section arrival_flight">
+                                <option value="">選択してください</option>
+                                <option value="a">アジア</option>
+                                <option value="b">アメリカ</option>
+                                <option value="c">ヨーロッパ</option>
+                                <option value="d">アフリカ</option>
+                            </select></label>
+                        </p>
+                        <p>
+                            <label>出発日<br>
+                            <input type="date">
+                            </label>
+                        </p>
+                        <p>
+                            <label>期間<br>
+                            <select name="term" class="term_section">
+                                <option value="">--</option>
+                                <option value="1">1日</option>
+                                <option value="2">2日</option>
+                                <option value="3">3日</option>
+                                <option value="4">4日</option>
+                            </select>
+                            </label>
+                        </p>
+                        <p class="search_button">
+                            <input type="image" src="sampleimage/kensaku.png" alt="検索" width="130">
+                        </p>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+            <div id="information">
+                <div id="info_box">
+                 <section id="news">
+                        <h2>NEWS</h2>
+                        <ul id="news_info">
+                            <li>GO TO TRAVELキャンペーンご利用いただけます。</li>
+                            <li>東京旅博にてイベントを行います。</li>
+                            <li>2020年11月30日まで早割予約受け付けております。</li>
+                        </ul>
+                    </section>
+                    <aside>
+                        <img src="sampleimage/icon.png" alt="乗り物別ツアー検索">
+                    </aside>
+                </div>
+            </div>
+                
+        
+            
+            <div id="recommend">
+                <div id="recommend_box">
+                <section class="info">
+                    <h2>おすすめツアー</h2>
+                    <ul class="tours">
+                        <li><a href="#"><img src="sampleimage/uyuni.jpg" alt="ウユニ塩湖"></a></li>
+                        <li><a href="#"><img src="sampleimage/food.jpg" alt="フードラバー"></a></li>
+                        <li><a href="#"><img src="sampleimage/beach.jpg" alt="ビーチリゾート"></a></li>
+                        <li><a href="#"><img src="sampleimage/aurora.jpg" alt="オーロラ"></a></li>
+                    </ul>
+                </section>
+                </div>
+            </div>
+            
+        
+    </div>
+    
+    <footer>
+        <div class="footer_box">
+            <p class="button_right"><a href="#page-top"><img src="sampleimage/pagetop.png" alt="トップページへ戻る"></a></p>
+            <p class="copyright"><small>Copyright&copy; GO ADVENTURE, All rights reserved.</small></p>
+        </div>
+    </footer> 
+</body>
+</html>
